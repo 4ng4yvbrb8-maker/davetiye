@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aliye & Mustafa Fatih | Nişan Davetiyesi</title>
+
+  <!-- WhatsApp ve Sosyal Medya Önizleme Kartı Ayarları -->
+  <meta property="og:title" content="Aliye & Mustafa Fatih | Nişan Davetiyesi" />
+  <meta property="og:description" content="13 Aralık 2026 Pazar • Saat 19:30 | SOBE Vakfı, Konya. En mutlu günümüzde sizleri de aramızda görmekten mutluluk duyarız." />
+  <meta property="og:image" content="https://4ng4yvbrb8-maker.github.io/davetiye/kapak.jpg" />
+  <meta property="og:url" content="https://4ng4yvbrb8-maker.github.io/davetiye/" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-navy: #0b1324;
+      --card-navy: #121d36;
+      --dusty-rose: #d99b9b;
+      --dusty-rose-soft: rgba(217, 155, 155, 0.16);
+      --text-light: #f4ecec;
+      --text-muted: #b8c2d6;
+      --border-rose: rgba(217, 155, 155, 0.32);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #172544 0%, var(--bg-navy) 70%);
+      color: var(--text-light);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 24px 16px 48px;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+      background: var(--card-navy);
+      border: 1px solid var(--border-rose);
+      border-radius: 24px;
+      padding: 36px 26px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 140px;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--dusty-rose), transparent);
+    }
+
+    .subtitle {
+      font-size: 0.78rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--dusty-rose);
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+
+    .photo-frame {
+      width: 170px;
+      height: 170px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      padding: 5px;
+      border: 1px solid var(--dusty-rose);
+      background: var(--dusty-rose-soft);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.55rem;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 8px;
+    }
+
+    h1 span {
+      color: var(--dusty-rose);
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    .invite-text {
+      color: var(--text-muted);
+      font-size: 0.94rem;
+      margin: 14px auto 24px;
+      max-width: 400px;
+    }
+
+    .parents {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      padding: 16px 10px;
+      border-top: 1px solid var(--border-rose);
+      border-bottom: 1px solid var(--border-rose);
+      margin-bottom: 24px;
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    .parents div span {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--dusty-rose);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .event-box {
+      background: rgba(11, 19, 36, 0.65);
+      border: 1px solid var(--border-rose);
+      border-radius: 16px;
+      padding: 20px 16px;
+      margin-bottom: 22px;
+    }
+
+    .event-date {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--dusty-rose);
+      margin-bottom: 4px;
+    }
+
+    .event-time {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 14px;
+    }
+
+    .program {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px dashed var(--border-rose);
+    }
+
+    .venue {
+      font-weight: 600;
+      font-size: 0.98rem;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .map-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background: var(--dusty-rose-soft);
+      border: 1px solid var(--dusty-rose);
+      color: var(--dusty-rose);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.25s ease;
+    }
+
+    .map-btn:hover {
+      background: var(--dusty-rose);
+      color: var(--bg-navy);
+    }
+
+    /* Katılım Bildirimi (LCV) Formu */
+    .rsvp-section {
+      background: rgba(11, 19, 36, 0.65);
+      border: 1px solid var(--border-rose);
+      border-radius: 16px;
+      padding: 22px 18px;
+      text-align: left;
+    }
+
+    .rsvp-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem;
+      color: var(--dusty-rose);
+      text-align: center;
+      margin-bottom: 4px;
+    }
+
+    .rsvp-sub {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--text-light);
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 11px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border-rose);
+      background: var(--card-navy);
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.92rem;
+      outline: none;
+    }
+
+    .form-input:focus {
+      border-color: var(--dusty-rose);
+    }
+
+    .count-options {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+
+    .count-options input[type="radio"] {
+      display: none;
+    }
+
+    .count-options label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 44px;
+      border-radius: 10px;
+      border: 1px solid var(--border-rose);
+      background: var(--card-navy);
+      color: var(--text-light);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      margin-bottom: 0;
+    }
+
+    .count-options input[type="radio"]:checked + label {
+      background: var(--dusty-rose);
+      color: var(--bg-navy);
+      border-color: var(--dusty-rose);
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 13px;
+      border: none;
+      border-radius: 12px;
+      background: var(--dusty-rose);
+      color: var(--bg-navy);
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 6px;
+      transition: opacity 0.2s ease;
+    }
+
+    .submit-btn:hover {
+      opacity: 0.9;
+    }
+
+    .status-msg {
+      display: none;
+      margin-top: 14px;
+      padding: 12px;
+      border-radius: 10px;
+      background: rgba(217, 155, 155, 0.18);
+      border: 1px solid var(--dusty-rose);
+      color: #fff;
+      font-size: 0.86rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="subtitle">Nişan Merasimi</div>
+
+    <div class="photo-frame">
+      <img src="kapak.jpg" alt="Aliye & Mustafa Fatih" />
+    </div>
+
+    <h1>Aliye <span>&amp;</span> Mustafa Fatih</h1>
+
+    <p class="invite-text">
+      Değerli misafirlerimiz, birlikteliğimizin ilk adımını atacağımız nişan merasimimizde sizleri de aramızda görmekten mutluluk duyarız.
+    </p>
+
+    <div class="parents">
+      <div>
+        <span>Gelin Ailesi</span>
+        Raziye &amp; Mehmet Ergün
+      </div>
+      <div>
+        <span>Damat Ailesi</span>
+        Hatice &amp; Ramazan Dalkıran
+      </div>
+    </div>
+
+    <div class="event-box">
+      <div class="event-date">13 Aralık 2026 Pazar</div>
+      <div class="event-time">Saat: 19:30</div>
+      <div class="program">
+        19:30 Misafir Karşılama &bull; 20:00 Nişan Merasimi
+      </div>
+      <div class="venue">SOBE Vakfı, Konya</div>
+      <a class="map-btn" href="https://maps.google.com/?q=SOBE+Vakfı+Konya" target="_blank" rel="noopener">
+        📍 Konumu Haritada Aç
+      </a>
+    </div>
+
+    <div class="rsvp-section">
+      <div class="rsvp-title">Katılım Bildirimi</div>
+      <div class="rsvp-sub">Lütfen katılım durumunuzu ve kişi sayısını belirtiniz.</div>
+
+      <form id="rsvpForm" action="https://formspree.io/f/meagdvpn" method="POST">
+        <div class="form-group">
+          <label for="guestName">Adınız ve Soyadınız</label>
+          <input class="form-input" type="text" id="guestName" name="Ad_Soyad" placeholder="Örn: Zeynep Yılmaz" required />
+        </div>
+
+        <div class="form-group">
+          <label>Kaç Kişi Katılacaksınız?</label>
+          <div class="count-options">
+            <div>
+              <input type="radio" id="kisi1" name="Kisi_Sayisi" value="1 Kişi" required />
+              <label for="kisi1">1</label>
+            </div>
+            <div>
+              <input type="radio" id="kisi2" name="Kisi_Sayisi" value="2 Kişi" />
+              <label for="kisi2">2</label>
+            </div>
+            <div>
+              <input type="radio" id="kisi3" name="Kisi_Sayisi" value="3 Kişi" />
+              <label for="kisi3">3</label>
+            </div>
+            <div>
+              <input type="radio" id="kisi4" name="Kisi_Sayisi" value="4 Kişi" />
+              <label for="kisi4">4</label>
+            </div>
+            <div>
+              <input type="radio" id="kisi5" name="Kisi_Sayisi" value="5 Kişi" />
+              <label for="kisi5">5</label>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Katılımı Bildir</button>
+        <div id="statusMsg" class="status-msg"></div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('rsvpForm');
+    const statusMsg = document.getElementById('statusMsg');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const btn = form.querySelector('.submit-btn');
+      btn.disabled = true;
+      btn.textContent = 'Gönderiliyor...';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          form.reset();
+          statusMsg.style.display = 'block';
+          statusMsg.textContent = 'Katılım bildiriminiz başarıyla iletildi. Teşekkür ederiz!';
+        } else {
+          statusMsg.style.display = 'block';
+          statusMsg.textContent = 'Bir hata oluştu, lütfen tekrar deneyiniz.';
+        }
+      } catch (err) {
+        statusMsg.style.display = 'block';
+        statusMsg.textContent = 'Bağlantı hatası oluştu, lütfen tekrar deneyiniz.';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Katılımı Bildir';
+      }
+    });
+  </script>
+</body>
+</html>
